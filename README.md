@@ -61,6 +61,10 @@ Start-Service RemoteRegistry
 
 - **Result:** **64 findings** — roughly double the unauthenticated scan — including one **High** severity finding. This is the expected pattern: credentialed scans authenticate to the host and inspect it from the inside, surfacing missing patches, registry weaknesses, and configuration issues that an outside-only scan can't see.
 
+### Credentialed Scan — 64 Findings
+![Credentialed scan full results](09-credentialed-full-vulnerability-list.png)
+
+
 ### 4. Remediated and Verified a High-Severity Finding
 
 | Finding | Severity | CVE |
