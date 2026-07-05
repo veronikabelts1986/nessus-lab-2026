@@ -73,6 +73,9 @@ Start-Service RemoteRegistry
 
 **Root cause:** missing `EnableCertPaddingCheck` registry values, which — if left unset — could allow an attacker to append arbitrary data to a signed executable without invalidating its digital signature.
 
+### High Severity Finding — CVE-2013-3900
+![CVE-2013-3900 finding detail](14-cve-2013-3900-full-detail.png)
+
 **Fix applied:**
 
 ```powershell
