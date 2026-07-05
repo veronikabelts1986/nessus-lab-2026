@@ -46,9 +46,9 @@ This is a good example of a common real-world friction point: security tools com
 
 - **Result:** ~30–35 findings, mostly Medium/Info severity, primarily SSL/certificate-related.
 
-## Unauthenticated Discovery Scan
-![Unauthenticated scan results](screenshots/02-unauthenticated-scan-hosts.png)
-![SSL findings from unauthenticated scan](screenshots/03-unauthenticated-ssl-findings.png)
+## Unauthenticated Discovery Scan Results
+![Unauthenticated scan results](02-unauthenticated-scan-hosts.png)
+![SSL findings from unauthenticated scan](03-unauthenticated-ssl-findings.png)
 
 ### 3. Ran a Credentialed Scan
 
