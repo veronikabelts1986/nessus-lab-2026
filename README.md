@@ -94,6 +94,10 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Cryptography\Wintru
 ![PowerShell fix step 1](12-powershell-fix-step1.png)
 ![PowerShell fix step 2](13-powershell-fix-step2.png)
 
+### Verified — Finding Cleared
+![Finding no longer present after re-scan](15-verified-high-finding-cleared.png)
+![Finding no longer present after re-scan](08-credentialed-scan-hosts-64findings.png) 
+
 ### 5. Reviewed Remaining Findings
 
 Two **Medium** severity findings remained after remediation, both related to the VM's self-signed RDP certificate (untrusted certificate chain). These were assessed and consciously left as-is:
