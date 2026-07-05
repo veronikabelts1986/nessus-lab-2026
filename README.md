@@ -2,7 +2,7 @@
 
 **Nessus Essentials (Free) · Azure Lab VM · CompTIA Security+ / CySA+**
 
-![Architecture Diagram](images/architecture-diagram.png)
+![Architecture Diagram](Images/architecture-diagram.png)
 
 ---
 
@@ -38,7 +38,7 @@ This is a good example of a common real-world friction point: security tools com
 
 ### Scan Overview
 
-![My Scans overview](images/01-scans-overview.png)
+![My Scans overview](Images/01-scans-overview.png)
 
 ### 2. Ran an Unauthenticated Discovery Scan
 
@@ -47,8 +47,8 @@ This is a good example of a common real-world friction point: security tools com
 - **Result:** ~30–35 findings, mostly Medium/Info severity, primarily SSL/certificate-related.
 
 ## Unauthenticated Discovery Scan Results
-![Unauthenticated scan results](images/02-unauthenticated-scan-hosts.png)
-![SSL findings from unauthenticated scan](images/03-unauthenticated-ssl-findings.png)
+![Unauthenticated scan results](Images/02-unauthenticated-scan-hosts.png)
+![SSL findings from unauthenticated scan](Images/03-unauthenticated-ssl-findings.png)
 
 ### 3. Ran a Credentialed Scan
 
