@@ -36,6 +36,10 @@ Restart-Service -Name "Tenable Nessus" -Force
 
 This is a good example of a common real-world friction point: security tools competing with each other for system resources, and the debugging process to isolate and resolve it.
 
+### Scan overview 
+
+![All three scans](screenshots/01-scans-overview.png)
+
 ### 2. Ran an Unauthenticated Discovery Scan
 
 **Basic Network Scan** against the VM itself (`127.0.0.1` and `10.0.0.4`), simulating what an external, unauthenticated attacker could see from outside.
