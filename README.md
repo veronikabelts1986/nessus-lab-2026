@@ -2,7 +2,7 @@
 
 **Nessus Essentials (Free) · Azure Lab VM · CompTIA Security+ / CySA+**
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture Diagram](images/architecture-diagram.png)
 
 ---
 
@@ -38,7 +38,7 @@ This is a good example of a common real-world friction point: security tools com
 
 ### Scan Overview
 
-![My Scans overview](01-scans-overview.png)
+![My Scans overview](images/01-scans-overview.png)
 
 ### 2. Ran an Unauthenticated Discovery Scan
 
@@ -47,8 +47,8 @@ This is a good example of a common real-world friction point: security tools com
 - **Result:** ~30–35 findings, mostly Medium/Info severity, primarily SSL/certificate-related.
 
 ## Unauthenticated Discovery Scan Results
-![Unauthenticated scan results](02-unauthenticated-scan-hosts.png)
-![SSL findings from unauthenticated scan](03-unauthenticated-ssl-findings.png)
+![Unauthenticated scan results](images/02-unauthenticated-scan-hosts.png)
+![SSL findings from unauthenticated scan](images/03-unauthenticated-ssl-findings.png)
 
 ### 3. Ran a Credentialed Scan
 
@@ -62,7 +62,7 @@ Start-Service RemoteRegistry
 - **Result:** **64 findings** — roughly double the unauthenticated scan — including one **High** severity finding. This is the expected pattern: credentialed scans authenticate to the host and inspect it from the inside, surfacing missing patches, registry weaknesses, and configuration issues that an outside-only scan can't see.
 
 ### Credentialed Scan — 64 Findings
-![Credentialed scan full results](09-credentialed-full-vulnerability-list.png)
+![Credentialed scan full results](Images/09-credentialed-full-vulnerability-list.png)
 
 
 ### 4. Remediated and Verified a High-Severity Finding
@@ -74,7 +74,7 @@ Start-Service RemoteRegistry
 **Root cause:** missing `EnableCertPaddingCheck` registry values, which — if left unset — could allow an attacker to append arbitrary data to a signed executable without invalidating its digital signature.
 
 ### High Severity Finding — CVE-2013-3900
-![CVE-2013-3900 finding detail](14-cve-2013-3900-full-detail.png)
+![CVE-2013-3900 finding detail](Images/14-cve-2013-3900-full-detail.png)
 
 **Fix applied:**
 
@@ -91,12 +91,12 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Cryptography\Wintru
 **Verification:** re-ran the credentialed scan. The CVE-2013-3900 finding no longer appeared — confirming the remediation was effective. This find → fix → verify loop is the single most important habit in vulnerability management; a fix that's never verified is just a guess.
 
 ### Remediation
-![PowerShell fix step 1](12-powershell-fix-step1.png)
-![PowerShell fix step 2](13-powershell-fix-step2.png)
+![PowerShell fix step 1](Images/12-powershell-fix-step1.png)
+![PowerShell fix step 2](Images/13-powershell-fix-step2.png)
 
 ### Verified — Finding Cleared
-![Finding no longer present after re-scan](15-verified-high-finding-cleared.png)
-![Finding no longer present after re-scan](08-credentialed-scan-hosts-64findings.png) 
+![Finding no longer present after re-scan](Images/15-verified-high-finding-cleared.png)
+![Finding no longer present after re-scan](Images/08-credentialed-scan-hosts-64findings.png) 
 
 ### 5. Reviewed Remaining Findings
 
