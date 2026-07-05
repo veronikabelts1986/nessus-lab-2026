@@ -36,6 +36,8 @@ Restart-Service -Name "Tenable Nessus" -Force
 
 This is a good example of a common real-world friction point: security tools competing with each other for system resources, and the debugging process to isolate and resolve it.
 
+### Scan Overview
+
 ![My Scans overview](01-scans-overview.png)
 
 ### 2. Ran an Unauthenticated Discovery Scan
