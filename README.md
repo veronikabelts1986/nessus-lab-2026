@@ -90,6 +90,10 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Cryptography\Wintru
 
 **Verification:** re-ran the credentialed scan. The CVE-2013-3900 finding no longer appeared — confirming the remediation was effective. This find → fix → verify loop is the single most important habit in vulnerability management; a fix that's never verified is just a guess.
 
+### Remediation
+![PowerShell fix step 1](12-powershell-fix-step1.png)
+![PowerShell fix step 2](13-powershell-fix-step2.png)
+
 ### 5. Reviewed Remaining Findings
 
 Two **Medium** severity findings remained after remediation, both related to the VM's self-signed RDP certificate (untrusted certificate chain). These were assessed and consciously left as-is:
