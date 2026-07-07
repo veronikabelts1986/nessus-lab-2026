@@ -2,6 +2,8 @@
 
 **Nessus Essentials (Free) · Azure Lab VM · CompTIA Security+ / CySA+**
 
+WATCH ME BUILD IT HERE https://canva.link/nessus-lab
+
 ![Architecture Diagram](Images/architecture-diagram.png)
 
 ---
